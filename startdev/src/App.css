@@ -1,0 +1,80 @@
+
+:root {
+  --temp-color: red;
+  --temp-color-2: blue;
+  --temp-color-3: green;
+  --background-color: #a0a4b8;
+  --temp-border: solid 2px lime;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+html {
+  background-color: var(--background-color);
+}
+
+
+.App {
+  background-color: var(--background-color);
+  text-align: center;
+  min-height: 100vh;
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative;
+  max-width: 960px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  
+}
+
+
+
+/* after the fact */
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+
+}
+
+.App-link {
+  color: #61dafb;
+} */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*---------- XXL ----------*/
+@media (min-width: 1440px) {
+
+  .App {
+      max-width: 1440px;
+      margin: 0 auto;
+  }
+
+}

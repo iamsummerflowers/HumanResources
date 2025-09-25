@@ -1,0 +1,57 @@
+:root {
+--header-vert: 2.5rem;
+--header-bg-color: #a0a4b8;
+--header-font: "Open Sans", sans-serif;
+--header-fontSize: 1rem;
+--header-fontColor: black;
+--header-border: solid 2px #a0a4b8;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+.header {
+  display: block;
+  width: 100%;
+  margin: var(--header-vert) 1.5rem;
+  background-color: var(--header-bg-color);
+  text-align: left;
+  padding-left: 2.5rem;
+  border: var(--header-border);
+
+      /* width: 100%;
+    margin: 0 auto; */
+    overflow: hidden;
+}
+
+.header > a {
+  font-family: var(--header-font);
+  font-size: var(--header-fontSize);
+  color: var(--header-fontColor);
+  text-decoration: none; 
+  transition: font-weight 0.3s ease; /* "When a user hovers over the link the hover styles transition gradually*/
+}
+
+.header > a:hover {
+  font-weight: bold; /* "When a user hovers over the link the text hover styles should be present*/
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .header {
+    /* padding-left: 2.5rem; */
+  }
+
+}
+
+/* Laptop */
+
+@media (min-width: 888px) {
+  .header {
+    /* padding-left: 5%; */
+  }
+
+}

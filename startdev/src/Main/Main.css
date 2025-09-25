@@ -1,0 +1,105 @@
+:root {
+    --main-bg-color: #a0a4b8; 
+    --main-vert: 2.5rem;
+    --holdsAllCards-vert: 2.5rem;
+    --holdsAllCards-horz: 2.5rem;
+    --holdsAllCards-gap: 1rem;
+    --title-font: "Gugi", sans-serif;
+    --title-fontSize: 2.5rem;
+    --title-fontColor: black;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    border: var(--main-bg-color);
+    margin: 0 0 var(--main-vert) 0;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main > div {
+    display: flex;
+}
+
+.mainSubheader{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    letter-spacing: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    padding: 2rem 0;
+}
+
+.mainSubheader > h1 {
+    font-family: var(--title-font);
+    font-size: var(--title-fontSize);
+    color: var(--title-fontColor);
+
+    position: absolute;
+    text-align: center;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 1;
+}
+
+
+.mainSubheader > img {
+    max-width: 8rem;  /* responsive */
+    /* max-height: 5%; */
+    margin: 0 auto;
+    opacity: 0.1;
+}
+
+.holdsAllCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: var(--temp-color-2); */
+    width: 20rem;
+    margin: 0 auto;
+    gap: var(--holdsAllCards-gap);
+}
+
+.holdsAllCards > div {
+    margin: 10px 0px;
+}
+
+
+/*---------- Smaller Screen ----------*/
+@media (min-width: 888px) {
+
+    .holdsAllCards {
+          display: flex;
+          flex-direction: row;
+          width: auto;
+          margin: var(--holdsAllCards-vert) var(--holdsAllCards-horz);
+          max-width: 888px;
+          margin: 0 auto;
+    }
+  
+  }
+
+/*---------- XXL ----------*/
+@media (min-width: 1440px) {
+
+  .holdsAllCards {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin: var(--holdsAllCards-vert) var(--holdsAllCards-horz);
+        max-width: 1440px;
+        margin: 0 auto;
+  }
+
+}
