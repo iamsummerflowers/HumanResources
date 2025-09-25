@@ -8,7 +8,7 @@ function Main() {
   return (
     <div className="main">
       <div className="mainSubheader">
-        <h1>startDEV</h1>
+        <h1>Testing TailwindCSS</h1>
         <img src={logo} alt="Logo"/>
       </div>
       <div className="holdsAllCards">
