@@ -183,15 +183,15 @@ function Summary({ projectName, crossSkills, roles, exportOpen, setExportOpen, s
           <h2 className="text-lg font-bold text-slate-800">Summary</h2>
           <div className="grid grid-cols-3 gap-3">
             <div className="rounded-xl bg-indigo-600/90 text-white p-4">
-              <div className="text-xs opacity-90">Total headcount</div>
+              <div className="text-s opacity-90">Total headcount</div>
               <div className="text-2xl font-extrabold">{totals.headcount}</div>
             </div>
             <div className="rounded-xl bg-violet-600/90 text-white p-4">
-              <div className="text-xs opacity-90">Planned weekly hours</div>
+              <div className="text-s opacity-90">Planned weekly hours</div>
               <div className="text-2xl font-extrabold">{totals.weeklyHours}</div>
             </div>
             <div className="rounded-xl bg-cyan-600/90 text-white p-4">
-              <div className="text-xs opacity-90">Roles</div>
+              <div className="text-s opacity-90">Roles</div>
               <div className="text-2xl font-extrabold">{roles.length}</div>
             </div>
           </div>
@@ -199,7 +199,7 @@ function Summary({ projectName, crossSkills, roles, exportOpen, setExportOpen, s
           {crossSkills.length > 0 && (
             <div className="pt-2">
               <div className="flex items-center gap-2 text-slate-600 font-semibold">
-                <span className="text-cyan-600">🤝</span>
+                <span className="text-cyan-600">🫱🏻‍🫲🏽</span>
                 <span>Cross‑functional skills</span>
               </div>
               <div className="mt-2 flex flex-wrap gap-2">

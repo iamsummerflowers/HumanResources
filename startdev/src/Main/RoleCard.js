@@ -58,7 +58,7 @@ function RoleCard({ role, updateRole, removeRole, defaultSkill }) {
 
       <div className="space-y-3">
         <div className="flex items-center gap-2 text-slate-800 font-semibold">
-          <span className="text-indigo-600">🧩</span>
+          <span className="text-indigo-600">🥷🏻</span>
           <span>Required skills & proficiency</span>
         </div>
         <div className="space-y-2">
@@ -144,6 +144,7 @@ function RoleCard({ role, updateRole, removeRole, defaultSkill }) {
           ].map(opt => (
             <label key={opt.value} className={`flex items-center gap-2 rounded-xl border ${role.availabilityType === opt.value ? 'border-indigo-500 bg-indigo-50/70' : 'border-slate-200 bg-white'} px-3 py-2 cursor-pointer transition`}>
               <input
+                className="w-fit mx-2"
                 type="radio"
                 name={`availability-${role.id}`}
                 checked={role.availabilityType === opt.value}

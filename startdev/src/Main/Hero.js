@@ -54,7 +54,7 @@ function Hero ({ projectName, setProjectName, crossSkills, setCrossSkills }) {
               <div className="flex flex-wrap items-center gap-2">
 
                 {crossSkills.map((skill, i) => (
-                  <span key={skill + i} className="inline-flex items-center gap-1.5 rounded-full bg-cyan-100 text-cyan-800 px-2.5 py-1 text-xs font-medium">
+                  <span key={skill + i} className="w-fit inline-flex items-center gap-1.5 rounded-full bg-cyan-100 text-cyan-800 px-2.5 py-1 text-xs font-medium">
                     {skill}
                     <button
                       type="button"
