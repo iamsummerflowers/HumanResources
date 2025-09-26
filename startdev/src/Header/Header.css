@@ -1,41 +1,43 @@
 :root {
---header-vert: 2.5rem;
+/* --header-vert: 2.5rem;
 --header-bg-color: #a0a4b8;
 --header-font: "Open Sans", sans-serif;
 --header-fontSize: 1rem;
 --header-fontColor: black;
---header-border: solid 2px #a0a4b8;
+--header-border: solid 2px #a0a4b8; */
 }
 
-*, *::before, *::after {
+/* *, *::before, *::after {
     box-sizing: border-box;
     width: 100%;
-  }
+  } */
 
 .header {
-  display: block;
+  /* display: block;
   width: 100%;
   margin: var(--header-vert) 1.5rem;
   background-color: var(--header-bg-color);
   text-align: left;
   padding-left: 2.5rem;
-  border: var(--header-border);
+  border: var(--header-border); */
 
       /* width: 100%;
     margin: 0 auto; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header > a {
-  font-family: var(--header-font);
+  /* font-family: var(--header-font);
   font-size: var(--header-fontSize);
   color: var(--header-fontColor);
   text-decoration: none; 
-  transition: font-weight 0.3s ease; /* "When a user hovers over the link the hover styles transition gradually*/
+  transition: font-weight 0.3s ease;  */
+  /* "When a user hovers over the link the hover styles transition gradually*/
 }
 
 .header > a:hover {
-  font-weight: bold; /* "When a user hovers over the link the text hover styles should be present*/
+  /* font-weight: bold; */
+  /* "When a user hovers over the link the text hover styles should be present*/
 }
 
 /* Tablet */

@@ -3,14 +3,33 @@
   --temp-color: red;
   --temp-color-2: blue;
   --temp-color-3: green;
-  --background-color: #a0a4b8;
+  --background-color: rgb(25, 26, 124);
   --temp-border: solid 2px lime;
 }
 
 *, *::before, *::after {
-  box-sizing: border-box;
-  width: 100%;
+  /* box-sizing: border-box;
+  width: 100%; */
 }
+
+  body {
+    box-sizing: border-box;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99,102,241,0.6) rgba(255,255,255,0.05);
+  }
+  *::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(99,102,241,0.6);
+    border-radius: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.08);
+  }
 
 html {
   background-color: var(--background-color);
@@ -36,6 +55,7 @@ html {
   align-items: center; */
   
 }
+
 
 
 
