@@ -1,0 +1,21 @@
+:root {
+  /* --card-bg-color: none;
+  --card-vert:none;
+  --card-horz:none;
+  --card-header-vert: 1.2rem;
+  --card-header-font: "Noto Sans", sans-serif;
+  --card-body-font: "Open Sans", sans-serif;
+  --card-header-fontSize: 1.7rem;
+  --card-body-fontSize: 0.9rem;
+  --card-header-fontColor: black;
+  --card-body-fontColor: black;
+  --firstCard-bg-color: #d8ddef;
+  --secondCard-bg-color: #45b69c;
+  --thirdCard-bg-color: #21d19f; */
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    width: 100%;
+  }

@@ -58,7 +58,7 @@ function TagInput({ field, placeholder, color, help, role, updateRole }) {
           <button
             type="button"
             onClick={handleAdd}
-            className="text-xs px-2.5 py-1 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition"
+            className="w-fit text-xs px-2.5 py-1 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition"
           >
             Add
           </button>

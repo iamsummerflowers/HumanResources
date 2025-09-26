@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import Header from './Header/Header.js';
 import Hero from './Main/Hero.js';
 import FeaturedRoles from './Main/FeaturedRoles.js';
+import Summary from './Main/Summary.js';
+
 import { uid } from './utils/utils.js';
 
 import Footer from './Footer/Footer.js';
@@ -101,8 +103,8 @@ function App() {
             <FeaturedRoles roles={roles} setRoles={setRoles} />
           </div>
           
-          {/* <div className="lg:col-span-4">
-            <Portfolio 
+          <div className="lg:col-span-4">
+            <Summary 
               projectName={projectName}
               crossSkills={crossSkills}
               roles={roles}
@@ -110,7 +112,7 @@ function App() {
               setExportOpen={setExportOpen}
               showToast={showToast}
             />
-          </div> */}
+          </div>
         </div>
 
         {/* {toast && (
